@@ -19,7 +19,7 @@ export const Header = ({ theme = "light", onThemeChange }: HeaderPros) => {
   }
 
   return (
-    <HeaderContainer>
+    <HeaderContainer data-testid="header">
       <Spacer />
       <HeaderLogo src={theme == "light" ? logo : lightlogo} />
       <Spacer />
