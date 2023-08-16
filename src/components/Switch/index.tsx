@@ -15,9 +15,9 @@ export const Switch = ({ onToggleTheme }: SwitchProps) => {
   return (
     <SwitchContainer className="switch-container">
       {isLightTheme ? (
-        <MoonIcon size={32} color={"#000000"} />
+        <SunIcon size={32} color={"#ffc400"} />
       ) : (
-        <MoonSolidIcon size={32} color={"#fff"} />
+        <SunSolidIcon size={32} color={"#ffc400"} />
       )}
 
       <label id="switch-theme" className="toggle-switch" title="troque o tema">
@@ -32,9 +32,9 @@ export const Switch = ({ onToggleTheme }: SwitchProps) => {
         />
       </label>
       {isLightTheme ? (
-        <SunSolidIcon size={32} color={"#ffc400"} />
+        <MoonSolidIcon size={32} color={"#ffffff"} />
       ) : (
-        <SunIcon size={32} color={"#ffc400"} />
+        <MoonIcon size={32} color={"#000000"} />
       )}
     </SwitchContainer>
   );
